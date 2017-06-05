@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'home#helloworld'
+
   get 'home/helloworld'
 
   mount Hyperloop::Engine => '/hyperloop'
